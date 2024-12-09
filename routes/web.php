@@ -3,9 +3,7 @@
 use App\Livewire\Day;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'welcome');
-
-Route::get('/day', Day::class)
+Route::get('/', Day::class)
     ->name('day');
 
 Route::view('dashboard', 'dashboard')

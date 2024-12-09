@@ -25,7 +25,7 @@ class Day extends Component
 
         // Add the date to the query params
         if (! $dateFromUrl) {
-            $this->redirect('/day' . '?date=' . $this->day->toDateString());
+            $this->redirect('/' . '?date=' . $this->day->toDateString());
         }
     }
 
